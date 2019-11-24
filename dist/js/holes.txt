@@ -1,0 +1,38 @@
+ const random = Math.random();
+ console.log(random);
+ //*****************************************************************
+
+ //Various patched holes
+
+ // Math.seedrandom(0.13572819013804205); //no dirt tiles, but 2 holes
+ // Math.seedrandom(0.20705584643586583); //no dirt tiles, but 2 holes
+ // Math.seedrandom(0.8409094827424775); //single hole by track
+ // Math.seedrandom(0.0869338961251922); //2 holes by dirt
+ // Math.seedrandom(0.4425101766761419); //1 hole by dirt and track
+ // Math.seedrandom(0.9814257105008959); //1 hole by dirt
+ // Math.seedrandom(0.24725904374319785); //2 holes by dirt
+ // Math.seedrandom(0.16556409661291638); //1 hole by dirt and track
+ // Math.seedrandom(0.12428999048407463); //1 hole just before finish line
+ // Math.seedrandom(0.4982834346985936); // 3 in a row
+
+ //*******************************************************************
+
+ //Holes in middle of map:
+
+ //Math.seedrandom(0.7884456353076923); //hole in dead centre of wall
+ //Math.seedrandom(0.30601171174548125); //2 diagonal holes in wall
+ //Math.seedrandom(0.8212589533482795); //1 hole near edge of wall
+
+ //*****************************************************************
+
+ //Outstanding holes:
+
+ //Math.seedrandom(0.3058966667008598);
+ //Math.seedrandom(0.4374536047045843);
+ //Math.seedrandom(0.09146182782519507);
+ //Math.seedrandom(0.02238756583796908);
+
+ //*******************************************
+
+
+ Math.seedrandom(random);

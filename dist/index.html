@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Car Chase v1</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<script src="./js/mainMenu.js"></script>
+
+<body>
+  <div id='mainMenu' class="menu active">
+    <ul>
+      <h1>F1 Kart Driving</h1>
+      <li><button value="raceOptionsMenu" onclick="setToActiveMenu(this.value)">Start</button></li>
+      <li><button value="aboutPage" onclick="setToActiveMenu(this.value)">About</button></li>
+    </ul>
+  </div>
+
+  <div id='raceOptionsMenu' class="menu">
+    <ul>
+      <li>Course size: <output id="levelSizeDisplay" for="levelSizeSlider">3</output>
+        <div class="slidecontainer">
+          <input type="range" min="1" max="5" value="3" class="slider" id="levelSizeSlider" oninput="levelSizeDisplay.value=levelSizeSlider.value">
+        </div>
+      </li> <br>
+      <li>Number of laps: <output id="lapsDisplay" for="lapsSlider">3</output><br>
+        <div class="slidecontainer">
+          <input type="range" min="1" max="10" value="3" class="slider" id="lapsSlider" oninput="lapsDisplay.value=lapsSlider.value">
+        </div>
+      </li> <br>
+      <li>Direction: <select id="directionDropdown">
+          <option value="clockwise">Clockwise</option>
+          <option value="anticlockwise">Anticlockwise</option>
+        </select></li> <br>
+      <li> <input type="checkbox" id="cornersSelection">Curved Corners</li><br>
+      <li><button onclick="loadGame()">Generate Map</button></li><br>
+      <li><button value="mainMenu" onclick="setToActiveMenu(this.value)">Return To Main Menu</button></li>
+    </ul>
+  </div>
+
+
+  <div id='aboutPage' class="menu">
+    <ul>
+      <li>This game was created with HTML, CSS (SASS) & Javascript.</li><br>
+      <li>Samuel Morgan - 2019</li><br>
+      <li><button value="mainMenu" onclick="setToActiveMenu(this.value)">Return To Main Menu</button></li>
+    </ul>
+  </div>
+
+
+  <div id='gameElements'>
+    <div id="car"></div>
+    <div id="point"></div>
+    <div class="wheel" id="wheel1"></div>
+    <div class="wheel" id="wheel2"></div>
+    <div class="wheel" id="wheel3"></div>
+    <div class="wheel" id="wheel4"></div>
+    <div id="stats"></div>
+    <div id="laps"></div>
+    <div id="raceText"></div>
+  </div>
+</body>
+
+<script src="./libs/seedrandom.js"></script>
+
+
+<!--
+<script src="./js/generateMap.js"></script>
+<script src="./js/loadCanvas.js"></script>
+<script src="./js/loadCar.js"></script>
+<script src="./js/intervals.js"></script>
+<script src="./js/playerInput.js"></script>
+<script src="./js/carMechanics.js"></script>
+<script src="./js/lapPosCheck.js"></script>
+<script src="./js/mapMovement.js"></script>
+<script src="./js/gameLogic.js"></script>
+<script src="./js/misc.js"></script> -->
+
+
+<style> </style>
