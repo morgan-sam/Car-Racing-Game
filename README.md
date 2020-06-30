@@ -2,6 +2,8 @@
 
 Car racing game written in HTML, CSS (SASS) & Javascript - (Uses seedrandom.js for testing)
 
+<a href='https://morgan-sam.github.io/Car-Racing-Game/'>Live Version</a>
+
 This is an incomplete project I made while learning javascript.
 
 As a result, there is not much structure in terms of software architecture/design patterns. 
